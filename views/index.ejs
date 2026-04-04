@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joke Generator 😂</title>
+</head>
+<body>
+
+<h1> Joke Generator 😂</h1>
+
+<form action="/jokes" method="GET">
+    <button type="submit">Get Joke</button>
+</form>
+    
+<% if(jokes) {%>
+    <% jokes.forEach(joke => { %>
+
+        <div style="margin-bottom: 20px;">
+            <h3><%= joke.setup %></h3>
+            <p><%= joke.punchline %></p>
+        </div>
+    <% }) %>
+<% } else{ %>
+        <p>Click the button to get a joke 😄</p>
+    <% } %>
+
+</body>
+</html> 
