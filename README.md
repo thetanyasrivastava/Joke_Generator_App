@@ -15,3 +15,10 @@
 ## How to Run
 npm install
 node index.js
+
+## What I Learned
+- API integration using Axios
+- Handling async/await
+- Error Handling
+- Working with different API response formats (object vs array)
+- Rendering dynamic content using EJS
